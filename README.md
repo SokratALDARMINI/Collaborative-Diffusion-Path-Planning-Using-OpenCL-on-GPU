@@ -1,8 +1,8 @@
 # Collaborative-Diffusion-Path-Planning-Using-OpenCL-on-GPU
 
-## Explanation of the algorithms
+## Algorithms
 
-This project represents implementing the path planning algorithm proposed in [1]. The algorithm is called Collaborative Diffusion, designed to be implemented on a GPU using parallel threads. 
+This project represents implementing the path planning algorithm proposed in [1]. The algorithm is called Collaborative Diffusion, designed to be implemented on a GPU using parallel threads for grid maps.
 
 The algorithm is summarized as follows.
 
@@ -29,7 +29,11 @@ Generated path on the original map:
 ![Capture 4](https://github.com/SokratALDARMINI/Collaborative-Diffusion-Path-Planning-Using-OpenCL-on-GPU/assets/95107709/535af826-d166-49df-a15f-4b1a0bf0919c)
 
 
-## OpenCL instructions:
+## Instructions:
+
+The kernel program is 'matrixAverageFilter.cl'.
+
+To modify the obstacle generation method, change the value of '#define obstacles_tpye 1' to '0', '1', or '2' in 'main.cpp'.
 
 This project leverages [Boost Compute]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/boostorg/compute)) for OpenCL applications. Being exclusively a template/header library, it bypasses the need for additional compilation or linkage. Boost included Compute starting from version 1.61.
 
