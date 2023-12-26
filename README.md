@@ -31,9 +31,9 @@ Generated path on the original map:
 
 ## Instructions:
 
-The kernel program is 'matrixAverageFilter.cl'.
+The kernel program is `matrixAverageFilter.cl`.
 
-To modify the obstacle generation method, change the value of '#define obstacles_tpye 1' to '0', '1', or '2' in 'main.cpp'.
+To modify the obstacle generation method, change the value of `#define obstacles_tpye 1` to `0`, `1`, or `2` in `main.cpp`.
 
 This project leverages [Boost Compute]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/boostorg/compute)) for OpenCL applications. Being exclusively a template/header library, it bypasses the need for additional compilation or linkage. Boost included Compute starting from version 1.61.
 
@@ -47,8 +47,8 @@ To build and initiate the program, simply run the 'make' command.
 
 AMD Graphics: Obtain the OpenCL SDK via [Github](https://github.com/GPUOpen-LibrariesAndSDKs/OCL-SDK/releases). For Nvidia Graphics: Secure the CUDA Toolkit from [Nvidia’s website](https://developer.nvidia.com/cuda-downloads).
 
-Proceed to download [Boost](http://www.boost.org/) and place it in a newly created subfolder named 'boost', excluding any version numbers.
+Proceed to download [Boost](http://www.boost.org/) and place it in a newly created subfolder named `boost`, excluding any version numbers.
 
-Given Compute's dependency on libboost_chrono, building all libraries is recommended. In the Visual Studio command prompt, go to the boost folder and run 'bootstrap' and then 'b2' to complete this process.
+Given Compute's dependency on libboost_chrono, building all libraries is recommended. In the Visual Studio command prompt, go to the boost folder and run `bootstrap` and then `b2` to complete this process.
 
 [1] McMillan, Craig, Emma Hart, and Kevin Chalmers. "Collaborative Diffusion on the GPU for Path-finding in Games." Applications of Evolutionary Computation: 18th European Conference, EvoApplications 2015, Copenhagen, Denmark, April 8-10, 2015, Proceedings 18. Springer International Publishing, 2015.
